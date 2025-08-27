@@ -219,7 +219,7 @@ const PointToPointConsultancy = () => {
               <Scale className="w-6 h-6" />
             </div>
             <div>
-              <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 'bold' }}>Point to Point Consultancy</h1>
+              <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 'bold' }}>Justice Path India </h1>
               <p style={{ margin: 0, fontSize: '0.9rem', opacity: 0.9 }}>Get The Best Advice Here</p>
             </div>
           </div>
@@ -876,7 +876,7 @@ Satish Malhotra, a retired Additional Deputy Commissioner of Police, brings with
             }}>
               <Scale className="w-5 h-5" />
             </div>
-            <h3 style={{ margin: 0, fontSize: '1.3rem' }}>Point to Point Consultancy</h3>
+            <h3 style={{ margin: 0, fontSize: '1.3rem' }}>Justice Path India </h3>
           </div>
 
           <p style={{
@@ -908,7 +908,7 @@ Satish Malhotra, a retired Additional Deputy Commissioner of Police, brings with
             alignItems: 'center',
           }}>
             <p style={{ margin: 0, opacity: 0.7 }}>
-              © 2024 Point to Point Consultancy. All rights reserved.
+              © 2024 Justice Path India . All rights reserved.
             </p>
             <div style={{ display: 'flex', gap: '20px' }}>
               <a href="tel:9851091011" style={{ color: '#60a5fa', textDecoration: 'none' }}>
