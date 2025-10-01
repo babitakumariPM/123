@@ -219,7 +219,7 @@ const PointToPointConsultancy = () => {
               <Scale className="w-6 h-6" />
             </div>
             <div>
-              <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 'bold' }}>Justice Path India from react app </h1>
+              <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 'bold' }}>Justice Path India</h1>
               <p style={{ margin: 0, fontSize: '0.9rem', opacity: 0.9 }}>Get The Best Advice Here</p>
             </div>
           </div>
