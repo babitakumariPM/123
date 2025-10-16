@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Award, Shield, Scale, Users, Star, Menu, X, CheckCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Award, Scale, Users, Star, Menu, X } from 'lucide-react';
 
 import bg3 from '../src/images/bg-3.png'; // Ensure this path is correct
 import profile from '../src/images/profile.jpg'; // Ensure this path is correct
@@ -10,15 +10,8 @@ import photo4 from '../src/images/Civil.jpg'; // Update with actual path
 import photo5 from '../src/images/cr.matters.jpg';
 import photo6 from '../src/images/Cop..jpg';
 import photo7 from '../src/images/image.jpg.jpg'; // Update with actual path
-import photo8 from '../src/images/tax.jpeg'; // Update with actual path
-import photo9 from '../src/images/l&E.jpeg'; // Update with actual path
-import photo10 from '../src/images/real&con.jpg'; // Update with actual path
-import photo11 from '../src/images/banking.jpeg'; // Update with actual path 
 import photo12 from '../src/images/cyber.jpg'; // Update with actual path
-import photo13 from '../src/images/med..jpg'; // Update with actual path
-import photo14 from '../src/images/sport.jpg'; // Update with actual path
 import photo15 from '../src/images/nri.jpg'; // Update with actual path     
-import photo16 from '../src/images/freeforpoor.jpg'; // Update with actual path
 import profile2 from '../src/images/profile2.jpg'; // Ensure this path is correct
 import speaker from '../src/images/publicSpeaking.jpg'; // Ensure this path is correct
 
@@ -36,6 +29,8 @@ const PointToPointConsultancy = () => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Updated services: removed Tax, Labour, Banking, Medical, Real Estate, Sports, Free for Poor.
+  // Moved NRI Legal Support up as requested.
   const services = [
     {
       title: "Advice for Civil Matters",
@@ -54,40 +49,12 @@ const PointToPointConsultancy = () => {
       description: "- Fundamental Rights Violations\n- Public Interest Litigation (PIL)\n- Service Matters",
     },
     {
-      title: "Advice for Tax Matters",
-      description: "- Income Tax \n- GST",
-    },
-    {
-      title: "Advice for Labour & Employment Matters",
-      description: "- Employee Rights & Disputes\n- Industrial Disputes Act Cases\n- Sexual Harassment (POSH Compliance)",
-    },
-    {
-      title: "Advice for Real Estate & Construction Matters",
-      description: "- RERA Compliance & Disputes\n- Land Acquisition\n- Builder-Buyer Agreements",
-    },
-    {
-      title: "Advice for Banking & Finance Matters",
-      description: "- Loan Recovery (SARFAESI, DRT)\n- RBI Compliance",
-    },
-    {
-      title: "Advice for Cyber Matters & Data Protection",
-      description: "- IT Act Compliance\n- Data Privacy",
-    },
-    {
-      title: "Advice for Medical & Healthcare Matters",
-      description: "- Medical Negligence Cases",
-    },
-    {
-      title: "Advice for Sports Matters",
-      description: "- Player Contracts\n- Doping & Dispute Resolution",
-    },
-    {
       title: "NRI Legal Support",
       description: "Specialized legal assistance for Non-Resident Indians with no consultation fees.",
     },
     {
-      title: "Free for Poor",
-      description: "Completely free legal consultation and support for economically disadvantaged individuals.",
+      title: "Advice for Cyber Matters & Data Protection",
+      description: "- IT Act Compliance\n- Data Privacy",
     },
   ];
 
@@ -435,9 +402,12 @@ const PointToPointConsultancy = () => {
                 lineHeight: '1.8',
                 color: '#4b5563',
                 marginBottom: '30px',
-              }}>
-Satish Malhotra, a retired Additional Deputy Commissioner of Police, brings with him over 40 years of exemplary service in law enforcement and legal advisory. Hailing from the village of Hambowal along the banks of the Sutlej River, he has devoted his life to upholding justice and supporting individuals in need with unwavering commitment.               </p>
-              <button
+              }}>Satish Malhotra, retired as an Additional Deputy Commissioner of Police, brings with him an experience of over 40 years of exemplary service in law enforcement. During his exemplary police service, Mr. Malhotra was decorated with the President Police Medal (in 2006) by Dr. A. P. J. Abdul Kalam - the then President of India.
+    Mr. Malhotra was also decorated with the CM Medal, D.G.P. Disc and other hundreds of appreciation letters and cash rewards. He was also awarded with the Rajiv Gandhi award from Delhi.
+    During his service, he cracked many complicated cases of National importance and also put them on logical ends. He also arrested many spies of Pakistan who were sent to Punjab for creating disturbances in India by the ISI Pakistan.
+    Hailing from the village of Hambowal along the banks of the Sutlej River, he has devoted his life to upholding justice and supporting individuals in need with unwavering commitment.
+    </p>
+              <button 
                 style={{
                   marginTop: 30,
                   background: '#1e3a8a',
@@ -595,7 +565,7 @@ Satish Malhotra, a retired Additional Deputy Commissioner of Police, brings with
               }}
             >
               {/* Duplicate images for seamless loop */}
-              {[photo1, photo2, photo3,speaker, photo1, photo2, photo3,speaker].map((src, idx) => (
+              {[photo1, photo2, photo3, speaker, photo1, photo2, photo3, speaker].map((src, idx) => (
                 <img
                   key={idx}
                   src={src}
@@ -638,21 +608,20 @@ Satish Malhotra, a retired Additional Deputy Commissioner of Police, brings with
             marginBottom: '60px',
           }}>
             {services.map((service, index) => {
-              const images = [photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16];
+              // use images aligned with the reduced services list
+              const images = [photo4, photo5, photo6, photo7, photo15, photo12];
               return (
                 <div
                   key={index}
                   style={{
-                    backgroundImage: `url(${images[index]})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
+                    position: 'relative',
                     padding: '40px',
                     textAlign: 'center',
                     transition: 'all 0.3s ease',
                     border: '1px solid #e2e8f0',
-                    position: 'relative',
                     overflow: 'hidden',
+                    borderRadius: 8,
+                    minHeight: 220,
                   }}
                   onMouseOver={(e) => {
                     e.currentTarget.style.transform = 'translateY(-5px)';
@@ -663,25 +632,41 @@ Satish Malhotra, a retired Additional Deputy Commissioner of Police, brings with
                     e.currentTarget.style.boxShadow = 'none';
                   }}
                 >
-                  <div style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    backgroundColor: 'rgba(0, 0, 0, 0.4)', // Semi-transparent overlay
-                    zIndex: 1,
-                  }} />
-                  <div style={{
-                    position: 'relative',
-                    zIndex: 2,
-                    color: 'white',
-                  }}>
-                    <h3 style={{
-                      fontSize: '1.4rem',
-                      fontWeight: 'bold',
-                      marginBottom: '15px',
-                    }}>
+                  {/* blurred background layer (only this will be blurred) */}
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      backgroundImage: `url(${images[index]})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
+                      filter: 'blur(4px)',
+                      transform: 'scale(1.05)', // avoid visible edges after blur
+                      zIndex: 0,
+                    }}
+                    aria-hidden="true"
+                  />
+
+                  {/* semi-transparent overlay */}
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      backgroundColor: 'rgba(0,0,0,0.35)',
+                      zIndex: 1,
+                    }}
+                  />
+
+                  {/* content (above blurred background) */}
+                  <div style={{ position: 'relative', zIndex: 2, color: 'white' }}>
+                    <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '15px' }}>
                       {service.title}
                     </h3>
                     <p style={{
