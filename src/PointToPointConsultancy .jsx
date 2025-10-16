@@ -50,7 +50,7 @@ const PointToPointConsultancy = () => {
     },
     {
       title: "NRI Legal Support",
-      description: "Specialized legal assistance for Non-Resident Indians with no consultation fees.",
+      description: "Specialized legal assistance for Non-Resident Indians with consultation fees.",
     },
     {
       title: "Advice for Cyber Matters & Data Protection",
