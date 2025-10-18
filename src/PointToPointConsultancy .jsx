@@ -98,19 +98,19 @@ const PointToPointConsultancy = () => {
         </span>
         <b>Humble Beginnings</b><br />
         Satish Malhotra Ji was born in the sacred village of Hambowal (Bet), a land graced by the
-        touch of the feet of Shri Guru Gobind Singh Ji. Nestled along the banks of the River Sutlej,
+        touch of feet of the 10th Sikh Guru- Shri Guru Gobind Singh Ji. Nestled along the banks of the River Sutlej,
         this land also has a proud history as Shri Guru Gobind Singh Ji conveyed his message to his
-        beloved friend through poetry in the forest of this land. Inspired by this divine connection,
+        beloved friend through poetry <span style={{  fontSize: '1rem',fontStyle: 'italic' }}>
+  “Mittar Pyare Nu Haal Mureedan da Kehna”
+</span> in the forest . Inspired by this divine connection,
+        <p>  He was also awarded with “Son of Bet”. His father Shri Hansraj Malhotra Ji, was also known as Baba Bohar of the “Bet” area and he was one of the most respected persons of the area. One of the most revered contributions of Shri Hansraj Malhotra Ji was that during his life, not even a single case of his village needed intervention from the Police Station. All were resolved to the right then and there in the village.
+</p>
+Mother of Shri Satish Malhotra Ji - Smt. Shanti Devi was also a religious lady and every morning she did Gurbani Path. She knew all the Shabad of Gurbani by heart.
+
         Mr. Malhotra's life journey has been guided by the values of humility, justice, and selfless
         service.
         <br /><br />
-        <b>Educational Path</b><br />
-        • Early education in Hambowal and Machhiwara<br />
-        • Higher studies at Arya College, Ludhiana<br />
-        • Graduation from Punjabi University, Patiala<br />
-        • LLB from Dehradun (with official permission during service)<br />
-        • Taking special interest in sports, Mr. Satish Malhotra reached the post of Additional Deputy Commissioner of Police during his service.
-        <br /><br />
+        
         <b>A Decorated Police Career</b><br />
         Over a 40-year illustrious career, taking special interest in sports, Mr. Malhotra promoted to
         the rank of Additional Deputy Commissioner of Police (ADCP). Known for his dedication and
@@ -120,6 +120,14 @@ const PointToPointConsultancy = () => {
         • Received hundreds of awards, citations, and commendations from the Deputy CM, DGP Punjab, and others<br />
         • Became the first officer in Punjab to extradite a murder accused from the UK post India-UK treaty<br />
         • Solved high-profile cases and fought anti-national elements, including operations against ISI agents
+        <br /><br />
+
+        <b>Educational Path</b><br />
+        • Early education in Hambowal and Machhiwara<br />
+        • Higher studies at Arya College, Ludhiana<br />
+        • Graduation from Punjabi University, Patiala<br />
+        • LLB from Dehradun (with official permission during service)<br />
+        • Taking special interest in sports, Mr. Satish Malhotra reached the post of Additional Deputy Commissioner of Police during his service.
         <br /><br />
 
         {/* --- PHOTO GALLERY IN BETWEEN --- */}
@@ -403,7 +411,7 @@ const PointToPointConsultancy = () => {
                 color: '#4b5563',
                 marginBottom: '30px',
               }}>Satish Malhotra, retired as an Additional Deputy Commissioner of Police, brings with him an experience of over 40 years of exemplary service in law enforcement. During his exemplary police service, Mr. Malhotra was decorated with the President Police Medal (in 2006) by Dr. A. P. J. Abdul Kalam - the then President of India.
-    Mr. Malhotra was also decorated with the CM Medal, D.G.P. Disc and other hundreds of appreciation letters and cash rewards. He was also awarded with the Rajiv Gandhi award from Delhi.
+   <p> Mr. Malhotra was also decorated with the CM Medal, D.G.P. Disc and other hundreds of appreciation letters and cash rewards. He was also awarded with the Rajiv Gandhi award from Delhi.</p>
     During his service, he cracked many complicated cases of National importance and also put them on logical ends. He also arrested many spies of Pakistan who were sent to Punjab for creating disturbances in India by the ISI Pakistan.
     Hailing from the village of Hambowal along the banks of the Sutlej River, he has devoted his life to upholding justice and supporting individuals in need with unwavering commitment.
     </p>
