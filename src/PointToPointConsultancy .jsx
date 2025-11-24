@@ -395,8 +395,9 @@ Mother of Shri Satish Malhotra Ji - Smt. Shanti Devi was also a religious lady a
             gridTemplateColumns: window.innerWidth > 768 ? '1fr 1fr' : '1fr',
             gap: '60px',
             alignItems: 'center',
+            gridAutoFlow: window.innerWidth > 768 ? 'row' : 'dense',
           }}>
-            <div>
+            <div style={{ order: window.innerWidth > 768 ? 0 : 2 }}>
               <h2 style={{
                 fontSize: '2.5rem',
                 fontWeight: 'bold',
@@ -443,6 +444,7 @@ Mother of Shri Satish Malhotra Ji - Smt. Shanti Devi was also a religious lady a
               borderRadius: '15px',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
               textAlign: 'center',
+              order: window.innerWidth > 768 ? 0 : 1,
             }}>
               <div style={{
                 width: '150px',
