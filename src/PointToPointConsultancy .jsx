@@ -559,38 +559,67 @@ Mother of Shri Satish Malhotra Ji - Smt. Shanti Devi was also a religious lady a
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           {/* Gallery - Moving images above "Our Core Services" */}
-          <div style={{
-            overflow: 'hidden',
-            width: '100%',
-            marginBottom: '60px',
-            position: 'relative',
-          }}>
-            <div
-              className="scroll-gallery"
-              style={{
-                display: 'flex',
-                gap: '30px',
-                animation: 'scrollGallery 18s linear infinite',
-                width: 'max-content',
-              }}
-            >
-              {/* Duplicate images for seamless loop */}
-              {[photo1, photo2, photo3, speaker, photo1, photo2, photo3, speaker].map((src, idx) => (
-                <img
-                  key={idx}
-                  src={src}
-                  alt={`Gallery ${idx % 3 + 1}`}
-                  style={{
-                    width: '320px',
-                    height: '220px',
-                    objectFit: 'cover',
-                    borderRadius: '12px',
-                    boxShadow: '0 4px 16px rgba(30,58,138,0.08)',
-                  }}
-                />
-              ))}
-            </div>
-          </div>
+          {/* Scrolling Gallery */}
+<div style={{
+  overflow: 'hidden',
+  width: '100%',
+  marginBottom: '30px',
+  position: 'relative',
+}}>
+  <style>{`
+    @keyframes scrollGallery {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .scroll-gallery { animation: scrollGallery 18s linear infinite; }
+  `}</style>
+  <div
+    className="scroll-gallery"
+    style={{ display: 'flex', gap: '30px', width: 'max-content' }}
+  >
+    {[photo1, photo2, photo3, speaker, photo1, photo2, photo3, speaker].map((src, idx) => (
+      <img
+        key={idx}
+        src={src}
+        alt={`Gallery ${idx + 1}`}
+        style={{
+          width: '320px',
+          height: '220px',
+          objectFit: 'cover',
+          borderRadius: '12px',
+          boxShadow: '0 4px 16px rgba(30,58,138,0.08)',
+          flexShrink: 0,
+        }}
+      />
+    ))}
+  </div>
+</div>
+
+{/* YouTube Video - OUTSIDE the animation, always works */}
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  marginBottom: '60px',
+}}>
+  <div style={{
+    width: '750px',
+    maxWidth: '100%',
+    borderRadius: '12px',
+    overflow: 'hidden',
+    boxShadow: '0 4px 16px rgba(30,58,138,0.15)',
+  }}>
+    <iframe
+      width="100%"
+      height="315"
+      src="https://www.youtube.com/embed/zHolN2AyMFU"
+      title="YouTube video"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+      style={{ display: 'block' }}
+    />
+  </div>
+</div>
 
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <h2 style={{
