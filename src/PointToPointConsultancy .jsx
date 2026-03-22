@@ -58,14 +58,14 @@ const PointToPointConsultancy = () => {
     },
   ];
 
-  const achievements = [
-    "Retired as Additional Deputy Commissioner of Police",
-    "President Police Medal (2006) recipient",
-    "Honored by former President APJ Abdul Kalam",
-    "40+ years of dedicated service",
-    "Expert in criminal and civil law",
-    "Specialized in NRI legal matters",
-  ];
+  // const achievements = [
+  //   "Retired as Additional Deputy Commissioner of Police",
+  //   "President Police Medal (2006) recipient",
+  //   "Honored by former President APJ Abdul Kalam",
+  //   "40+ years of dedicated service",
+  //   "Expert in criminal and civil law",
+  //   "Specialized in NRI legal matters",
+  // ];
 
   const aboutSatishMalhotra = (
     <div>
